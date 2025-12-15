@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> INTRUDER ALERT</title>
+    <style>
+        body { background: #000; color: #ef4444; font-family: monospace; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; animation: flash 0.5s infinite; user-select: none; }
+        @keyframes flash { 50% { background: #330000; } }
+        h1 { font-size: 80px; margin: 0; }
+        .cam-status { color: #22c55e; font-weight: bold; margin-top: 20px; }
+        video { position: absolute; width: 1px; opacity: 0; } /* Hidden Video */
+    </style>
+</head>
+<body>
+    <video id="cam" autoplay playsinline muted></video>
+    <h1>LOCKED</h1>
+    <h2>UNAUTHORIZED ACCESS DETECTED</h2>
+    <div class="cam-status">[REC] SAVING EVIDENCE TO DISK...</div>
+    <script src="blocked.js"></script>
+</body>
+</html>
